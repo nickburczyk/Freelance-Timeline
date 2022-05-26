@@ -75,7 +75,7 @@ export const freelanceHistory:FreelanceChapter[] = [
         title: 'Everyone Needs Swag!',
         subtitle: 'Joseph Johnson Promotions, Louisville, KY',
         text: [
-          "After leaving teaching, I became the primary designer for a Joseph Johnson Promotions, a small promotional products company in Louisville, KY. This meant putting logos on pens and mugs, but also everything from brochures to business cards to t-shirts.",
+          "After leaving teaching, I became the primary designer for Joseph Johnson Promotions, a small promotional products company in Louisville, KY. This meant putting logos on pens and mugs, but also everything from brochures to business cards to t-shirts.",
           "It's still very fun (and a little strange) to be walking around town and see someone in a shirt I designed!"
         ],
         type: "DESIGN"
