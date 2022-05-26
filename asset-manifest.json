@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Freelance-Timeline/static/css/main.050d8740.css",
-    "main.js": "/Freelance-Timeline/static/js/main.09c636bb.js",
+    "main.js": "/Freelance-Timeline/static/js/main.e7ff86e7.js",
     "static/js/787.5e9c7dad.chunk.js": "/Freelance-Timeline/static/js/787.5e9c7dad.chunk.js",
     "static/media/DSC_7494.JPG": "/Freelance-Timeline/static/media/DSC_7494.fba4fc9328ece4f77627.JPG",
     "static/media/DSC_7499.JPG": "/Freelance-Timeline/static/media/DSC_7499.5786cb89e359321d15ce.JPG",
     "index.html": "/Freelance-Timeline/index.html",
     "main.050d8740.css.map": "/Freelance-Timeline/static/css/main.050d8740.css.map",
-    "main.09c636bb.js.map": "/Freelance-Timeline/static/js/main.09c636bb.js.map",
+    "main.e7ff86e7.js.map": "/Freelance-Timeline/static/js/main.e7ff86e7.js.map",
     "787.5e9c7dad.chunk.js.map": "/Freelance-Timeline/static/js/787.5e9c7dad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.050d8740.css",
-    "static/js/main.09c636bb.js"
+    "static/js/main.e7ff86e7.js"
   ]
 }
