@@ -1,0 +1,47 @@
+.flexHeader {
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  font-size: 2rem;
+  font-weight: 100;
+  padding: 2rem;
+}
+
+.point__heading {
+  margin-bottom: 1rem
+}
+
+.point__subtitle {
+  font-size: smaller;
+  font-style: italic;
+  color: #878787;
+}
+
+.point__p {
+  margin-bottom: 1rem;
+}
+
+.point__content {
+  margin-bottom: 5rem !important;
+  overflow: hidden;
+  max-lines: 3;
+}
+
+.point__content ul {
+  list-style: none;
+}
+
+.point__content ul li {
+  margin-bottom: 1rem;
+}
+
+.chapter__yearRange {
+  margin: 2rem auto;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.dot {
+  background-color: mediumturquoise !important;
+}

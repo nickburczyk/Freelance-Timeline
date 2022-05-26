@@ -1,9 +1,12 @@
 import './App.css';
+import Home from './components/Home/Home';
+import MyTimeline from './components/Timeline/MyTimeline';
 
 function App() {
   return (
     <div className="App">
-      hello world
+      <Home/>
+      <MyTimeline/>
     </div>
   );
 }
