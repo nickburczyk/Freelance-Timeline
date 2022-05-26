@@ -1,0 +1,13 @@
+.footer {
+  padding: 3rem;
+  background-color: #575757;
+  color: #eaeaea
+}
+
+.footer p {
+  margin-bottom: .5rem
+}
+
+.footer a {
+  color: mediumturquoise
+}
