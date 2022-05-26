@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# A Freelancing History
+
+This is a brief history of my time as a freelancer. It is a story, really, of a journey that I should have always seen would lead me to full-time development. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Timeline components come from [MaterialUI](https://mui.com/)
 
 ## Available Scripts
 
