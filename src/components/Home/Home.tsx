@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <header className={header}>
       <div className={avatar}/>
-      <h1 className={title}>I'm Nick Burczyk.</h1>
+      <h1 className={title}>Hi, I'm Nick.</h1>
       <p className={p}>
         I am a senior React developer who absolutely loves building things. Modern frontend 
         frameworks like React provide the perfect balance between engineering and creativity. 
