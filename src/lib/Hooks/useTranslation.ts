@@ -1,6 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import { LanguageContext } from '../context';
 
-const useTranslation = (lang:"EN-US" | "DE", text:string, page: string, cacheKey:string) => {
+const useTranslation = (text:string, page: string, cacheKey:string) => {
+  const { lang } = useContext(LanguageContext)
   const [translation, setTranslation] = useState<string>('');
 
   useEffect(() => {
@@ -17,6 +19,7 @@ const useTranslation = (lang:"EN-US" | "DE", text:string, page: string, cacheKey
     text,
     source_lang: "EN",
     target_lang: lang,
+    formality: 'less',
     split_sentences: 0
   };
 

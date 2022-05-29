@@ -1,5 +1,7 @@
-import { useState } from "react"
+import { useContext } from "react"
+import { LanguageContext } from "../../lib/context"
 import useTranslation from "../../lib/Hooks/useTranslation"
+import LanguageToggle from "../LanguageToggle/LanguageToggle"
 import styles from "./home.module.css"
 
 const {
@@ -7,32 +9,31 @@ const {
 } = styles
 
 const Home = () => {
-  const [lang, setLang] = useState<any>("EN-US")
-  const title = useTranslation(lang, texts.title, 'home', 'title')
-  const p1 = useTranslation(lang, texts.p1, 'home', 'p1')
-  const p2 = useTranslation(lang, texts.p2, 'home', 'p2')
-  const p3 = useTranslation(lang, texts.p3, 'home', 'p3')
-  const p3Bold = useTranslation(lang, texts.p3Bold, 'home', 'p3Bold')
+  const { translated } = useContext(LanguageContext)
+
+  const title = useTranslation(texts.title, 'home', 'title')
+  const p1 = useTranslation(texts.p1, 'home', 'p1')
+  const p2 = useTranslation(texts.p2, 'home', 'p2')
+  const p3 = useTranslation(texts.p3, 'home', 'p3')
+  const p3Bold = useTranslation(texts.p3Bold, 'home', 'p3Bold')
 
   return (
     <header className={header}>
       <div className={avatar}/>
-      <h1 className={titleStyle}>{title || texts.title}</h1>
+      <h1 className={titleStyle}>{(translated && title) ? title : texts.title}</h1>
       <p className={p}>
-        {(lang !== "EN-US" && p1) ? p1 : texts.p1}
+        {(translated && p1) ? p1 : texts.p1}
       </p>
       <p className={p}>
-        {(lang !== "EN-US" && p2) ? p2 : texts.p2}
+        {(translated && p2) ? p2 : texts.p2}
       </p>
       <p className={p}>
-        {(lang !== "EN-US" && p3) ? p3 : texts.p3}
+        {(translated && p3) ? p3 : texts.p3}
         <br/>
-        <b>{(lang !== "EN-US" && p3Bold) ? p3Bold : texts.p3Bold}</b>
+        <b>{(translated && p3Bold) ? p3Bold : texts.p3Bold}</b>
       </p>
-      <select onChange={(e)=>setLang(e.target.value)}>
-        <option value={"EN-US"}>English</option>
-        <option value={"DE"}>Deutsch</option>
-      </select>
+
+      <LanguageToggle/>
     </header>
   )
 }

@@ -20,3 +20,5 @@ export type IDetailItem = {
   title: string;
   desc: string;
 }
+
+export type ValidLanguage = "EN-US" | "DE"
