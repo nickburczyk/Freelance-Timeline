@@ -31,11 +31,11 @@
   background-repeat: no-repeat;
   filter:saturate(0%);
   background-position-y: -30px;
-  background-image: url("../../assets/img/DSC_7494.JPG");
+  background-image: url("../../assets/img/smile.jpg");
   transition: filter 150ms ease-in-out;
 }
 .avatar:hover {
   filter: saturate(100%);
   background-position-x: right 15px;
-  background-image: url("../../assets/img/DSC_7499.JPG");
+  background-image: url("../../assets/img/silly.jpg");
 }
