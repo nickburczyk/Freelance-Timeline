@@ -4,6 +4,7 @@ import Home from './components/Home/Home';
 import MyTimeline from './components/Timeline/MyTimeline';
 
 function App() {
+  // console.log(sessionStorage)
   return (
     <div className="App">
       <Home/>

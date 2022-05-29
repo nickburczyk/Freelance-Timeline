@@ -7,7 +7,7 @@
   padding: 3rem;
 }
 
-.title {
+.titleStyle {
   font-size: 5rem;
   font-weight: 100;
   margin-bottom: 2rem;
@@ -29,9 +29,9 @@
   border-radius: 50%;
   margin-bottom: 2rem;
   background-repeat: no-repeat;
-  filter:saturate(0%);
   background-position-y: -30px;
   background-image: url("../../assets/img/smile.jpg");
+  filter:saturate(0%);
   transition: filter 250ms ease-in-out;
 }
 .avatar:hover {
