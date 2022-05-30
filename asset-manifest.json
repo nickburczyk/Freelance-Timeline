@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Freelance-Timeline/static/css/main.050d8740.css",
-    "main.js": "/Freelance-Timeline/static/js/main.4c6b33bd.js",
+    "main.css": "/Freelance-Timeline/static/css/main.67a17678.css",
+    "main.js": "/Freelance-Timeline/static/js/main.49190b72.js",
     "static/js/787.5e9c7dad.chunk.js": "/Freelance-Timeline/static/js/787.5e9c7dad.chunk.js",
-    "static/media/DSC_7494.JPG": "/Freelance-Timeline/static/media/DSC_7494.fba4fc9328ece4f77627.JPG",
-    "static/media/DSC_7499.JPG": "/Freelance-Timeline/static/media/DSC_7499.5786cb89e359321d15ce.JPG",
+    "static/media/smile.jpg": "/Freelance-Timeline/static/media/smile.858a73e3d53ae8207b7a.jpg",
+    "static/media/silly.jpg": "/Freelance-Timeline/static/media/silly.874943ebb2d508c28b1d.jpg",
     "index.html": "/Freelance-Timeline/index.html",
-    "main.050d8740.css.map": "/Freelance-Timeline/static/css/main.050d8740.css.map",
-    "main.4c6b33bd.js.map": "/Freelance-Timeline/static/js/main.4c6b33bd.js.map",
+    "main.67a17678.css.map": "/Freelance-Timeline/static/css/main.67a17678.css.map",
+    "main.49190b72.js.map": "/Freelance-Timeline/static/js/main.49190b72.js.map",
     "787.5e9c7dad.chunk.js.map": "/Freelance-Timeline/static/js/787.5e9c7dad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.050d8740.css",
-    "static/js/main.4c6b33bd.js"
+    "static/css/main.67a17678.css",
+    "static/js/main.49190b72.js"
   ]
 }
