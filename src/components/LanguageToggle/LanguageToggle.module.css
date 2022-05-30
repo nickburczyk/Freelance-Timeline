@@ -4,10 +4,37 @@
   position: fixed;
   top: 2rem;
   right: 2rem;
+  width: calc(100% - 4rem);
+}
+
+.ghButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  padding: 0 1rem;
+  border-radius: 4px;
+  border: none;
+  background-color: mediumaquamarine;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+  color: black;
+  text-decoration: none;
+}
+
+.ghButton:hover {
+  background-color: #59b596;
+  transform: scale(1.05);
+  color: black;
 }
 
 .flag {
   cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+
+.flag:not(.active):hover {
+  transform: scale(1.15);
 }
 
 .flag.active {
