@@ -8,6 +8,9 @@ Timeline components come from [MaterialUI](https://mui.com/)
 
 Translation supported by [DeepL](https://www.deepl.com/pro-api?cta=header-pro-api)
 
+## View as a website
+[https://nickburczyk.github.io/Freelance-Timeline/](https://nickburczyk.github.io/Freelance-Timeline/)
+
 ## Available Scripts
 
 In the project directory, you can run:
