@@ -1,10 +1,11 @@
 export type PointType = "DEV" | "DESIGN"
 
 export type FreelanceItem = {
+  id:string;
   title: string;
   subtitle?: string;
-  text?: string | string[];
-  additionalContent?: JSX.Element
+  text: string[];
+  details?: IDetailItem[]
   type: PointType;
   year: number;
   yearEnd?: number;

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react"
+import { useContext, useState } from "react"
 import { 
   TimelineItem,
   TimelineSeparator,
@@ -7,28 +7,30 @@ import {
   TimelineDot,
   TimelineOppositeContent
 } from '@mui/lab'
-import { FreelanceItem, PointType } from "../../lib/types"
+import { FreelanceItem } from "../../lib/types"
 import styles from "./timeline.module.css"
-import { Box, Modal } from "@mui/material"
+import { LanguageContext } from "../../lib/context"
+import { randomize } from "../../lib/utili"
+import useTranslation from "../../lib/Hooks/useTranslation"
+import TranslatedParagraph from "./TranslatedParagraph"
+import DetailItem from './DetailItem'
 
 const PointInTime = ({
   event: {
     title, subtitle, 
-    text, additionalContent, 
+    text, details, 
     year, yearEnd, type, 
   }
 }:Props) => {
+  const { translated } = useContext(LanguageContext)
+  const [id] = useState(randomize(9))
 
-  // const [open, setOpen] = useState(false)
+  const translation = useTranslation(subtitle, id, 'subtitle')
+  const titleText = useTranslation(title, id, 'title')
+  const subtitleText = subtitle === "Adventure Christian Church" 
+    ? subtitle 
+    : translation
 
-  // const handleOpen = ():void => {
-  //   setOpen(true)
-  // }
-
-  // const handleClose = ():void => {
-  //   setOpen(false)
-  // }
-  // const anchorEl=useRef()
   return (
     <TimelineItem position={type === "DEV" ? 'right' : 'left'}>
       <TimelineOppositeContent color="#878787">
@@ -40,19 +42,19 @@ const PointInTime = ({
       </TimelineSeparator>
       <TimelineContent className={styles.point__content}>
         <div className={styles.point__heading}>
-          <h3>{title}</h3>
-          <p className={styles.point__subtitle}>{subtitle}</p>
+          <h3>{(translated && titleText) ? titleText : title}</h3>
+          <p className={styles.point__subtitle}>{(translated && subtitleText) ? subtitleText : subtitle}</p>
         </div>
-        <>
-          {Array.isArray(text) ? (
-            text.map( (t, i) => 
-              <p key={i} className={styles.point__p}>{t}</p>
-            )
-          ) : (
-            <p className={styles.point__p}>{text}</p>
+          {text.map( (t, i) => 
+            <TranslatedParagraph key={i} text={t} page={id} index={i}/>
           )}
-        </>
-        {additionalContent}
+          {details && 
+            <ul>
+              {details.map( (d, i) => (
+                <DetailItem key={i} index={i} detail={d} eventId={id}/>
+              ))}
+            </ul>
+          }
       </TimelineContent>
       {/* ADD LATER TO ALLOW MORE DETAILS */}
       {/* <Modal

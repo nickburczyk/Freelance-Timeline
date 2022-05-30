@@ -9,3 +9,7 @@ export const sortObjArray = (array:any[], sortKey:string, direction:sortDirectio
 }
 
 type sortDirection = "asc" | "desc"
+
+export const randomize = (length: number) => {
+  return Math.random().toString(36).slice(length-1)
+}

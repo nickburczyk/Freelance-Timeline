@@ -1,4 +1,3 @@
-import DetailItem from "../components/Timeline/DetailItem"
 import { FreelanceChapter } from "./types"
 
 const currentYear = new Date().getFullYear()
@@ -7,6 +6,7 @@ export const freelanceHistory:FreelanceChapter[] = [
     timeframe: "2005-2007",
     events: [
       {
+        id: "ukathletics",
         year: 2005,
         yearEnd: 2007,
         title: 'Desktop Wallpaper Aficionado', 
@@ -23,6 +23,7 @@ export const freelanceHistory:FreelanceChapter[] = [
     timeframe: "2007-2010",
     events: [
       {
+        id: "jcps_design",
         year: 2007,
         yearEnd: 2012,
         title: 'School Music Program Branding Guru', 
@@ -34,6 +35,7 @@ export const freelanceHistory:FreelanceChapter[] = [
         type: "DESIGN",
       },
       {
+        id: "jcps_dev",
         year: 2009,
         yearEnd: 2012,
         title: 'One-stop shop',
@@ -45,6 +47,7 @@ export const freelanceHistory:FreelanceChapter[] = [
         type: "DEV"
       },
       {
+        id: "acc_design",
         year: 2008,
         yearEnd: 2015,
         title: 'Creative Programming Graphics',
@@ -60,6 +63,7 @@ export const freelanceHistory:FreelanceChapter[] = [
     timeframe: "2010-2014",
     events: [
       {
+        id: "acc_dev",
         year: 2011,
         title: 'I Built My First Website! 🎉', 
         text: [
@@ -70,6 +74,7 @@ export const freelanceHistory:FreelanceChapter[] = [
         type: "DEV",
       },
       {
+        id: "jjp",
         year: 2010,
         yearEnd: 2017,
         title: 'Everyone Needs Swag!',
@@ -86,41 +91,41 @@ export const freelanceHistory:FreelanceChapter[] = [
     timeframe: "2014-2017",
     events: [
       {
+        id: "template_dev",
         year: 2014,
         yearEnd: 2017,
         title: '"Template Platforms Are AMAZING!"', 
         subtitle: '- Me, circa 2014',
-        text: 'These are the days when I discovered the beauty of template platforms like *shape-space* and *word-push*. Back then, they allowed me to do a lot of the work of building a polished website for clients without the fuss. Here are some of the projects from that era:', 
-        additionalContent: (
-          <ul>
-            <DetailItem 
-              title="Guaranteed Home Construction" 
-              desc="General Contractor in Louisville, KY" 
-            />
-            <DetailItem 
-              title="RxAlternatives" 
-              desc="Compounding Pharmacy in Louisville, KY" 
-            />
-            <DetailItem 
-              title="Open Doors" 
-              desc="Humanitarian organization in Kentucky and Guatemala" 
-            />
-            <DetailItem 
-              title="Wear The Legacy" 
-              desc="E-Commerce apparel website" 
-            />
-            <DetailItem 
-              title="Forza Tuned" 
-              desc="High-end tuning garage in Georgetown, IN" 
-            />
-          </ul>
-        ),
+        text: ['These are the days when I discovered the beauty of template platforms like *shape-space* and *word-push*. Back then, they allowed me to do a lot of the work of building a polished website for clients without the fuss. Here are some of the projects from that era:'], 
+        details: [
+          {
+            title: "Guaranteed Home Construction", 
+            desc: "General Contractor in Louisville, KY" 
+          },
+          {
+            title: "RxAlternatives", 
+            desc: "Compounding Pharmacy in Louisville, KY" 
+          },
+          {
+            title: "Open Doors", 
+            desc: "Humanitarian organization in Kentucky and Guatemala" 
+          },
+          {
+            title: "Wear The Legacy", 
+            desc: "E-Commerce apparel website" 
+          },
+          {
+            title: "Forza Tuned", 
+            desc: "High-end tuning garage in Georgetown, IN" 
+          },
+    ],
         type: "DEV",
       },
       {
+        id: "design_freelancing",
         year: 2017,
         title: "Branding Specialist",
-        text: "I began taking more ambitious design jobs, creating brand identities (logos, style guides, etc) for several clients, mostly of the local small business variety.",
+        text: ["I began taking more ambitious design jobs, creating brand identities (logos, style guides, etc) for several clients, mostly of the local small business variety."],
         type: "DESIGN"
       }
     ]
@@ -129,6 +134,7 @@ export const freelanceHistory:FreelanceChapter[] = [
     timeframe: "2017-2019",
     events: [
       {
+        id: "cgh",
         year: 2017,
         title: 'The custom calendar conundrum', 
         subtitle: 'Limitations breed innovation',
@@ -139,6 +145,7 @@ export const freelanceHistory:FreelanceChapter[] = [
         type: "DEV",
       },
       {
+        id: "template_dev_2",
         year: 2017,
         title: '"Template Platforms Are GARBAGE!"', 
         subtitle: '- Me, circa 2017',
@@ -150,18 +157,21 @@ export const freelanceHistory:FreelanceChapter[] = [
         type: "DEV",
       },
       {
+        id: "hodge_dev",
         year: 2019,
         title: 'Hodge Law, PLLC', 
-        text: 'My final freelance client. This website was completed but never launched, at the request of the client for budgetary reasons.', 
+        text: ['My final freelance client. This website was completed but never launched, at the request of the client for budgetary reasons.'], 
         type: "DEV",
       },
       {
+        id: "hodge_design",
         year: 2019,
         title: 'Hodge Law, PLLC', 
-        text: 'My last design client. Included logo work, All print assets (letterhead, business cards etc), brand guidelines, and website.', 
+        text: ['My last design client. Included logo work, All print assets (letterhead, business cards etc), brand guidelines, and website.'], 
         type: "DESIGN",
       },
       {
+        id: "atomivox",
         year: 2018,
         yearEnd: 2019,
         title: 'The "Custom Builds" Guy',
@@ -171,30 +181,28 @@ export const freelanceHistory:FreelanceChapter[] = [
           "I played a part building websites using page builders, but my primary role was to build the custom components and elements according to client spec.",
           "This was my first taste of building React applications and embedding them into a WP site. Some of my jobs included:"
         ],
-        additionalContent: (
-          <ul>
-            <DetailItem 
-              title="React savings calculator"
-              desc="A interactive savings calculator based on ReactJS "
-            />
-            <DetailItem 
-              title="Custom calendar"
-              desc="Building on my previous experience with international calendars, this was calendar 2.0, built with ReactJS"
-            />
-            <DetailItem
-              title="Multi-step Form"
-              desc="Client requested a form that could be handled across multiple steps. Built with ReactJS"
-            />
-            <DetailItem 
-              title="Website builds"
-              desc="Used our page builders to build client websites."
-            />
-            <DetailItem 
-              title="Branding/Logo development"
-              desc="Led initial branding efforts for two incoming clients"
-            />
-          </ul>
-        ),
+        details: [
+          {
+            title: "React savings calculator",
+            desc: "A interactive savings calculator based on ReactJS "
+          },
+          {
+            title: "Custom calendar",
+            desc: "Building on my previous experience with international calendars, this was calendar 2.0, built with ReactJS"
+          },
+          {
+            title: "Multi-step Form",
+            desc: "Client requested a form that could be handled across multiple steps. Built with ReactJS"
+          },
+          {
+            title: "Website builds",
+            desc: "Used our page builders to build client websites."
+          },
+          {
+            title: "Branding/Logo development",
+            desc: "Led initial branding efforts for two incoming clients"
+          },
+        ],
         type: "DEV",
       },
     ]
@@ -203,6 +211,7 @@ export const freelanceHistory:FreelanceChapter[] = [
     timeframe: `2019-${currentYear}`,
     events: [
       {
+        id: "fulltime_dev",
         year: 2019,
         yearEnd: currentYear,
         title: 'Finally, a full-time developer!', 
@@ -211,18 +220,16 @@ export const freelanceHistory:FreelanceChapter[] = [
           "After years of building skills on the side, I finally made the switch to developing full-time.",
           "In this period, I have worked as the sole or primary Frontend developer on two projects. One was a Fintech startup with a tiny team, and the other on a team at a Fortune 100 company."
         ], 
-        additionalContent: (
-          <ul>
-            <DetailItem
-              title="AIG Warranty"
-              desc=".NET, C#, SQL, React"
-            />
-            <DetailItem 
-              title="borderless"
-              desc="React, Typescript, GraphQL, Node.js (+ TS), Prisma, Docker"
-            />
-          </ul>
-        ),
+        details: [
+          {
+            title: "AIG Warranty",
+            desc: ".NET, C#, SQL, React"
+          },
+          {
+            title: "borderless",
+            desc: "React, Typescript, GraphQL, Node.js (+ TS), Prisma, Docker"
+          },
+        ],
         type: "DEV",
       },
     ]

@@ -1,7 +1,11 @@
 import { useContext, useEffect, useState } from 'react';
 import { LanguageContext } from '../context';
 
-const useTranslation = (text:string, page: string, cacheKey:string) => {
+const useTranslation = (
+  text:string | undefined, 
+  page: string, 
+  cacheKey:string
+) => {
   const { lang } = useContext(LanguageContext)
   const [translation, setTranslation] = useState<string>('');
 
@@ -9,13 +13,13 @@ const useTranslation = (text:string, page: string, cacheKey:string) => {
     if (lang === "EN-US") {
       return
     }
-
     translate()
-}, [lang])
+  }, [lang])
 
+  
   const baseUrl = "https://api-free.deepl.com/v2/translate?";
   const params:any = {
-    auth_key: "0dd8ed21-3166-9868-a905-eb09e9762643:fx",
+    auth_key: process.env.REACT_APP_DEEP_L_AUTH,
     text,
     source_lang: "EN",
     target_lang: lang,
@@ -42,7 +46,7 @@ const useTranslation = (text:string, page: string, cacheKey:string) => {
     const fullUri = baseUrl + uri;
 
     await fetch(fullUri)
-      .then((res) => {
+    .then((res) => {
         if (res.ok) {
           return res.json();
         }
@@ -55,7 +59,7 @@ const useTranslation = (text:string, page: string, cacheKey:string) => {
           sessionStorage.setItem(lang, JSON.stringify({}))
         }
         cached = sessionStorage.getItem(lang)
-
+        
         const cachedParsed = cached && JSON.parse(cached)
         const updated = {
           ...cachedParsed, 
@@ -70,9 +74,10 @@ const useTranslation = (text:string, page: string, cacheKey:string) => {
         setTranslation('')
         console.log(`Error fetching translation for: "${text}"`)
       })
-  };
-
-  return translation
+    };
+    
+    if (text === undefined) return
+    return translation
 }
 
 export default useTranslation
