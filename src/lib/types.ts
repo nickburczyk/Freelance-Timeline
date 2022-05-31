@@ -22,4 +22,4 @@ export type IDetailItem = {
   desc: string;
 }
 
-export type ValidLanguage = "EN-US" | "DE"
+export type ValidLanguage = "EN-US" | "DE" | "ES"

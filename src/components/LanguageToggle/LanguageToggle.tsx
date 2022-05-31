@@ -12,6 +12,7 @@ const LanguageToggle = () => {
   return (
     <div className={styles.wrapper}>
       <a href={"https://github.com/nickburczyk/Freelance-Timeline"} target="_blank" className={styles.ghButton} style={{marginRight: 'auto'}} rel="noreferrer">View on Github <FaGithub/></a>
+      <CircleFlag onClick={() => toggleLanguage("ES")} className={cn(styles.flag, lang === 'ES' && styles.active)} alt={"Español"} countryCode="es" height={40}/>
       <CircleFlag onClick={() => toggleLanguage("DE")} className={cn(styles.flag, lang === 'DE' && styles.active)} alt={"Deutsch"} countryCode="de" height={40}/>
       <CircleFlag onClick={() => toggleLanguage("EN-US")} className={cn(styles.flag, lang === 'EN-US' && styles.active)} alt={"English"}  countryCode="us" height={40}/>
     </div>
