@@ -36,6 +36,5 @@
 }
 .avatar:hover {
   filter: saturate(100%);
-  background-position-x: right 15px;
   background-image: url("../../assets/img/silly.jpg");
 }
