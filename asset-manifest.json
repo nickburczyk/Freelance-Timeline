@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Freelance-Timeline/static/css/main.cfd4542d.css",
-    "main.js": "/Freelance-Timeline/static/js/main.71ef7f40.js",
+    "main.css": "/Freelance-Timeline/static/css/main.ccf76c56.css",
+    "main.js": "/Freelance-Timeline/static/js/main.1a269196.js",
     "static/js/787.5e9c7dad.chunk.js": "/Freelance-Timeline/static/js/787.5e9c7dad.chunk.js",
     "static/media/smile.jpg": "/Freelance-Timeline/static/media/smile.858a73e3d53ae8207b7a.jpg",
     "static/media/silly.jpg": "/Freelance-Timeline/static/media/silly.874943ebb2d508c28b1d.jpg",
     "index.html": "/Freelance-Timeline/index.html",
-    "main.cfd4542d.css.map": "/Freelance-Timeline/static/css/main.cfd4542d.css.map",
-    "main.71ef7f40.js.map": "/Freelance-Timeline/static/js/main.71ef7f40.js.map",
+    "main.ccf76c56.css.map": "/Freelance-Timeline/static/css/main.ccf76c56.css.map",
+    "main.1a269196.js.map": "/Freelance-Timeline/static/js/main.1a269196.js.map",
     "787.5e9c7dad.chunk.js.map": "/Freelance-Timeline/static/js/787.5e9c7dad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfd4542d.css",
-    "static/js/main.71ef7f40.js"
+    "static/css/main.ccf76c56.css",
+    "static/js/main.1a269196.js"
   ]
 }
