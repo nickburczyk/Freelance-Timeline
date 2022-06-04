@@ -45,3 +45,17 @@
 .dot {
   background-color: mediumturquoise !important;
 }
+
+.pointInTimeHeader {
+  display: flex;
+  align-items: center;
+}
+
+.pointInTimeHeader.DESIGN {
+  justify-content: flex-end;
+}
+
+.titleIcon {
+  color: #149dd5;
+  margin-right: 10px;
+}

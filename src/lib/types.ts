@@ -3,6 +3,7 @@ export type PointType = "DEV" | "DESIGN"
 export type FreelanceItem = {
   id:string;
   title: string;
+  icon?: string;
   subtitle?: string;
   text: string[];
   details?: IDetailItem[]

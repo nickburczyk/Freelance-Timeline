@@ -145,6 +145,17 @@ export const freelanceHistory:FreelanceChapter[] = [
         type: "DEV",
       },
       {
+        id: "udacity",
+        year: 2017,
+        title: "Udacity Nanodegree", 
+        icon: 'SiUdacity',
+        subtitle: 'Frontend Development',
+        text: [
+          "Completed a Udacity 'Nanodegree' with a focus on Frontend development. This in-depth, four-month course covered all critical aspects of frontend development, including working with third-party APIs, working with game engines, multiple modern Javascript frameworks (React, Vue, Angular), with a strong emphasis on React."
+        ], 
+        type: "DEV",
+      },
+      {
         id: "template_dev_2",
         year: 2017,
         title: '"Template Platforms Are GARBAGE!"', 

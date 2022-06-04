@@ -66,3 +66,14 @@ body {
     transform: rotate(360deg);
   }
 }
+
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
+.titleImg {
+  display: inline-block;
+  width: 20px;
+}
